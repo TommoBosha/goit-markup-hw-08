@@ -1,0 +1,15 @@
+
+.activity-list {
+    @include list;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.activity__card {
+    width: 370px;
+}
+.activity__image {
+display: block;
+}

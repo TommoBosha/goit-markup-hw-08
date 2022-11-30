@@ -1,0 +1,28 @@
+.clients {
+    @include list;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    color: $PrimarySVGColor;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $PrimarySVGColor;
+    border-radius: 4px;
+    outline: transparent;
+    &:hover, &:focus{
+        border: 1px solid $AccentColor;
+            color: $AccentColor;
+    }
+}
+.client__card {
+    fill: currentColor;
+}
