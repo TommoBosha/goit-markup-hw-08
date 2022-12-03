@@ -1,0 +1,25 @@
+.activity {
+  display: none;
+  @include destop {
+    display: block;
+  }
+}
+
+.activity-list {
+  display: none;
+
+  @include destop {
+    @include list;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.activity__card {
+  width: 370px;
+}
+.activity__image {
+  display: block;
+}

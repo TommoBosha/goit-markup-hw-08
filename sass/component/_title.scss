@@ -1,0 +1,23 @@
+.section-title {
+  margin-bottom: 30px;
+  color: $TitleTextColor;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @include destop {
+    .title {
+      font-size: 36px;
+      line-height: 1.167;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.title_accent {
+  text-decoration: underline;
+  color: $AccentColor;
+}

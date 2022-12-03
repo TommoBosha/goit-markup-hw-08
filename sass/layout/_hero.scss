@@ -4,22 +4,57 @@
   background: var(--bg-hero);
   text-align: center;
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, $StartColor, $StartColor),
-    url(../images/hero/Imgbg.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/hero/phone-480@1x.jpg');
+
+  @include retina-bgi {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/phone-480@2x.jpg');
   }
 
-  @media screen and (min-width: 1200px) {
+  @include phone {
+    max-width: 797.99px;
+    padding: 118px 0px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/header-768@1x.jpg');
+
+    @include retina-bgi {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/hero/header-768@2x.jpg');
+    }
+  }
+
+  @include tablet {
+    max-width: 1199.99px;
+    padding: 118px 0px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/header-768@1x.jpg');
+
+    @include retina-bgi {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/hero/header-768@2x.jpg');
+    }
+  }
+  @include destop {
     max-width: 1600px;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding: 200px 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/hero/destop-1200@1x.jpg');
+
+    @include retina-bgi {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/hero/destop-1200@2x.jpg');
+    }
   }
 }
 
@@ -37,7 +72,7 @@
   font-size: 26px;
   line-height: 1.62;
 
-  @media screen and (min-width: 1200px) {
+  @include destop {
     width: 696px;
     margin-bottom: 30px;
     font-size: 44px;

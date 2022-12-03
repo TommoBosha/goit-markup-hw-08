@@ -7,8 +7,22 @@
   letter-spacing: 0.03em;
 
   color: $TitleTextColor;
+
+  @include destop {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .logo_color_accent {
   color: $AccentColor;
+}
+
+.logo__fotter {
+  @include link;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo__fotter_accent_color {
+  color: $PrimaryWhiteColor;
 }

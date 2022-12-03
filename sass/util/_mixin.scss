@@ -1,40 +1,61 @@
-@mixin sociallink($bgc:$PrimaryWhiteColor){
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        border-radius: 50%;
-        outline: transparent;
-        background-color: $bgc;
-            width: 40px;
-            height: 40px;
+@mixin sociallink($bgc: $PrimaryWhiteColor) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  outline: transparent;
+  background-color: $bgc;
+  width: 40px;
+  height: 40px;
 }
 
 @mixin link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @mixin list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-@mixin button($bg:$AccentColor,$color:$PrimaryWhiteColor) {
+@mixin button($bg: $AccentColor, $color: $PrimaryWhiteColor) {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  color: $color;
+  background: $bg;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  &:hover,
+  &:focus {
+    background: $SecondaryAccentColor;
+  }
+}
 
-    
-    cursor: pointer;
-    border: none;
-    text-align: center;
-    border-radius: 4px;
-    color: $color;
-    background: $bg;
-    font-weight: 700;
-        line-height: 1.88;
-      letter-spacing: 0.06em;
-    &:hover,
-        &:focus {
-            background: $SecondaryAccentColor;
-        }
+@mixin phone {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin destop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin retina-bgi {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
 }

@@ -1,0 +1,17 @@
+.filters {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  gap: 8px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include destop {
+    margin-bottom: 50px;
+  }
+}

@@ -1,9 +1,29 @@
-@import './util/var.scss';
-@import './base/common';
+@import './util/var';
 @import './util/mixin';
+@import './util/overlay';
+@import './util/visually-hidden';
+
+@import './base/common';
 @import './base/container.scss';
+
+@import './component/mobile-menu';
 @import './component/header';
 @import './component/nav-menu';
 @import './component/logo';
 @import './component/contacts';
+@import './component/menu-btn';
+@import './component/button';
+@import './component/title';
+@import './component/social-networks';
+@import './component/backdrop';
+@import './component/modal-window';
+@import './component/modal-form';
+@import './component/filter';
+
 @import './layout/hero';
+@import './layout/features';
+@import './layout/activity';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/team';
+@import './layout/portfolio';

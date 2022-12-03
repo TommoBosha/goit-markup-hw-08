@@ -1,7 +1,7 @@
 .contacts {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include list;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@
     gap: 10px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include destop {
     flex-direction: row;
     gap: 30px;
   }
@@ -34,7 +34,7 @@
     color: $AccentColor;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include destop {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;

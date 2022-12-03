@@ -28,10 +28,10 @@
         <nav class="nav-menu">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link">Студія</a>
+              <a href="./index.html" class="nav-list__link nav-list__link_current">Студія</a>
             </li>
             <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link nav-list__link_current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav-list__link">Портфоліо</a>
             </li>
             <li class="nav-list__item">
               <a href="#" class="nav-list__link">Контакти</a>
@@ -54,6 +54,11 @@
             >
           </li>
         </ul>
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn_icon js-open-menu">
+            <use href="./images/icon/icon.svg#menu-mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -89,11 +94,19 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-1@1x.jpg  450w,
+                      ./images/projects/portfolio-480-1@2x.jpg  900w,
+                      ./images/projects/portfolio-768-1@1x.jpg  354w,
+                      ./images/projects/portfolio-768-1@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-1@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-1@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-1@1x.jpg"
                     alt="сайт в ноутбуке"
-                    width="370"
                   />
+
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -113,10 +126,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/progect2.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-2@1x.jpg  450w,
+                      ./images/projects/portfolio-480-2@2x.jpg  900w,
+                      ./images/projects/portfolio-768-2@1x.jpg  354w,
+                      ./images/projects/portfolio-768-2@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-2@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-2@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-2@1x.jpg"
                     alt="хлопці грають в баскетбол"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -127,7 +147,7 @@
                   </div>
                 </div>
                 <div class="work-examples__card">
-                  <h2 class="work-examples__title">New Orlean vs Golden Star</h2>
+                  <h2 class="work-examples__title">Постер New Orlean vs Golden Star</h2>
                   <p class="work-examples__text">Дизайн</p>
                 </div>
               </a>
@@ -137,10 +157,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project3.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-3@1x.jpg  450w,
+                      ./images/projects/portfolio-480-3@2x.jpg  900w,
+                      ./images/projects/portfolio-768-3@1x.jpg  354w,
+                      ./images/projects/portfolio-768-3@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-3@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-3@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-3@1x.jpg"
                     alt="риба та напис"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -161,10 +188,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project4.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-4@1x.jpg  450w,
+                      ./images/projects/portfolio-480-4@2x.jpg  900w,
+                      ./images/projects/portfolio-768-4@1x.jpg  354w,
+                      ./images/projects/portfolio-768-4@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-4@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-4@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-4@1x.jpg"
                     alt="навушники"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -185,10 +219,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project5.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-5@1x.jpg  450w,
+                      ./images/projects/portfolio-480-5@2x.jpg  900w,
+                      ./images/projects/portfolio-768-5@1x.jpg  354w,
+                      ./images/projects/portfolio-768-5@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-5@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-5@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-5@1x.jpg"
                     alt="дві коробки"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -209,10 +250,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project6.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-6@1x.jpg  450w,
+                      ./images/projects/portfolio-480-6@2x.jpg  900w,
+                      ./images/projects/portfolio-768-6@1x.jpg  354w,
+                      ./images/projects/portfolio-768-6@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-6@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-6@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px "
+                    src="./images/projects/portfolio-480-6@1x.jpg"
                     alt="монітор"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -233,10 +281,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project7.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-7@1x.jpg  450w,
+                      ./images/projects/portfolio-480-7@2x.jpg  900w,
+                      ./images/projects/portfolio-768-7@1x.jpg  354w,
+                      ./images/projects/portfolio-768-7@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-7@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-7@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-7@1x.jpg"
                     alt="відкритий журнал"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -259,10 +314,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project8.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-8@1x.jpg  450w,
+                      ./images/projects/portfolio-480-8@2x.jpg  900w,
+                      ./images/projects/portfolio-768-8@1x.jpg  354w,
+                      ./images/projects/portfolio-768-8@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-8@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-8@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                    src="./images/projects/portfolio-480-8@1x.jpg"
                     alt="бірка"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -283,10 +345,17 @@
               <a href="#" class="work-examples__link">
                 <div class="work-examples__box">
                   <img
-                    class="work-examples__photo"
-                    src="./images/projects/project9.jpg"
+                    srcset="
+                      ./images/projects/portfolio-480-9@1x.jpg  450w,
+                      ./images/projects/portfolio-480-9@2x.jpg  900w,
+                      ./images/projects/portfolio-768-9@1x.jpg  354w,
+                      ./images/projects/portfolio-768-9@2x.jpg  708w,
+                      ./images/projects/portfolio-1200-9@1x.jpg 370w,
+                      ./images/projects/portfolio-1200-9@2x.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px,100vw "
+                    src="./images/projects/portfolio-480-9@1x.jpg"
                     alt="сайт в ноутбуке"
-                    width="370"
                   />
                   <div class="overlay-portfolio">
                     <p class="work-examples__label">
@@ -375,9 +444,9 @@
         <div class="footer__signup-box">
           <p class="footer-title">Підпишіться на розсилку</p>
           <form class="signup">
-            <label>
+            <label class="signup__label">
               <input
-                class="signup-input"
+                class="signup__input"
                 type="email"
                 name="mail"
                 placeholder="E-mail"
@@ -393,5 +462,67 @@
         </div>
       </div>
     </footer>
+
+    <!-- Мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-container__button button-close js-close-menu">
+        <svg class="button-close__icon">
+          <use href="./images/icon/icon.svg#close-mobile"></use>
+        </svg>
+      </button>
+      <div class="burger-menu">
+        <nav class="menu-container__nav">
+          <ul class="mobile__list">
+            <li class="menu-container__item">
+              <a href="./index.html" class="menu-container__link">Студія</a>
+            </li>
+            <li class="menu-container__item">
+              <a href="./portfolio.html" class="menu-container__link">Портфоліо</a>
+            </li>
+            <li class="menu-container__item">
+              <a href="/" class="menu-container__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-bottom">
+          <ul class="menu__contacts">
+            <li class="menu__contacts-list">
+              <a href="tel:+380961111111" class="menu__contacts-link link">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contacts-list">
+              <a
+                href="mailto:info@devstudio.com"
+                class="menu__contacts-link menu__contacts-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu-socnet-list">
+            <li class="menu-socnet__item">
+              <a href="#" class="menu-socnet__link link">Instagram</a>
+            </li>
+            <li class="menu-socnet__item">
+              <a href="#" class="menu-socnet__link link">Twitter</a>
+            </li>
+            <li class="menu-socnet__item">
+              <a href="#" class="menu-socnet__link link">Facebook</a>
+            </li>
+            <li class="menu-socnet__item">
+              <a href="#" class="menu-socnet__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

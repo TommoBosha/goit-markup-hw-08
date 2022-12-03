@@ -1,7 +1,7 @@
 .nav-menu {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include list;
     display: flex;
   }
@@ -10,12 +10,12 @@
 .nav-list {
   @include list;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-bottom: 0;
     display: flex;
     margin-left: 87px;
   }
-  @media screen and (min-width: 1200px) {
+  @include destop {
     margin-left: 93px;
   }
 }
@@ -29,7 +29,7 @@
 }
 
 .nav-list__link {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     position: relative;
     font-size: 14px;
     line-height: 1.142;
