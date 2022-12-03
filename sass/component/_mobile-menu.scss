@@ -117,7 +117,9 @@
   color: $TitleTextColor;
   transition: color $transition;
 }
-
+.menu-container__link_color_accent {
+  color: $AccentColor;
+}
 .menu__contacts {
   display: flex;
   flex-direction: column;
