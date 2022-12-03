@@ -761,7 +761,7 @@ a {
 }
 
 .checkbox {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -771,9 +771,13 @@ a {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .checkbox {
     display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
     font-size: 14px;
     line-height: 1.7142857143;
   }

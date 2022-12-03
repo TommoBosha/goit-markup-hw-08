@@ -86,7 +86,7 @@
 }
 
 .checkbox {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -95,8 +95,10 @@
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
-  @include destop {
+  @include tablet {
     display: flex;
+  }
+  @include destop {
     font-size: 14px;
     line-height: calc(24 / 14);
   }
