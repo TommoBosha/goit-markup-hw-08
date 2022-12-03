@@ -891,7 +891,6 @@ a {
 }
 
 .hero__title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -901,6 +900,11 @@ a {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
